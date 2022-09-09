@@ -323,12 +323,61 @@ I'm very proud, that **TODAY**, more than **7 YEARS** later...
 
 (PHOTOS)
 
+- [https://dynamicsvalue.com/customer-stories](https://dynamicsvalue.com/customer-stories)
 
 
 ---
 ![bg](./images/BizzSummitBackGround.png)
 
-# Code snippet format 
+<hr/>
+
+# Moral of the Story ...
+
+- **Don't listen** to naysayers...
+- Be **consistent**   
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Why?
+
+## Increased developer efficiency
+
+https://dynamicsvalue.com/white-paper
+
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Evolution of Unit Testing in Dataverse
+
+- **Level 0**: No mocks / unit tests (many companies, surprisingly, still here)
+- **Level 1**: Manual mocks / fakse
+- **Level 2**: In-Memory data-driven unit testing with FakeXrmEasy
+- **Level 3**: Simulation: Azure functions + plugins firing In-Memory 
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# DEMO
+
+## Scenario
+- 
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Code snippet ...
+
+
 
 ``` csharp
 // Some code here
