@@ -2,240 +2,314 @@
 marp: true
 theme: bizzsummit
 paginate: true
-header: '![image](./images/FXE.svg)'
-footer: '![image](./images/DynamicsValueWide.svg) ![image](./images/jordi2.png)'
+footer: '![image](./images/BizzSummitLogoBig.png)'
 ---
 
 <style>
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
 </style>
 
-# Quick Guide
+![bg](./images/BizzSummitBackGroundTitle.png)
 
-### Migrating FakeXrmEasy 1.x to the latest versions
+<style scoped>
+img {
+    margin-top: -30px;
+    height: 300px;
+    margin-left: 360px;
+    text-align: center;
+}
+h1 {
+  font-size: 70px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 5px;
+}
+h3 {
+  font-family: 'Roboto';
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 30px;
+}
 
-If you had a project that was using FakeXrmEasy (`FXE`) v1.x, this guide will help you migrate your projects to the latest versions in a few steps.
+</style>
 
-`FXE` allows you to **build, run, test and debug your applications 100%** `In-Memory`, which is extremely `fast`, and more `carbon friendly`.
+![image](./images/BizzSummitLogoBig.png)
 
----
-
-## Benefits
-
-
-- Drive development of `.net` applications that connect to Dataverse through **automated testing** `at scale`. 
-
-![imageAtScale](./migrating-from-1x/tests-at-scale.png)
-
-- Increased `developer efficiency`: prevent and find `bugs` instantly.
-- <i class="fa fa-long-arrow-down"></i> CPU cycles than with integration testing > <i class="fa fa-long-arrow-down"></i> energy > `carbon friendly`.
-
-
----
-
-## Benefits (II)
-
-
-- `Mitigate` issues `locally` due to how `FXE` mimics Dataverse functionality.
-
-- `Shortens` the developer feedback loop, cause you don't have to deploy in-between changes.
-
-- `Open Source`: source code is public and **fully auditable**.
+# Azure Functions, FakeXrmEasy, Dataverse
+### Jordi Montaña
 
 ---
 
-## Background
+![bg](./images/Sponsors.svg)
 
-You could use `FXE v1.x` to dev & test both server-side and client-side applications in either `net452` or `net462` before.
+---
 
-With the latest version of the `DataverseClient` , `1.0.1`, that targets `netcoreapp3.1`, we can use now `netcore` to build **client-side applications**... 
 
-...but we must still use the previous `Microsoft.CrmSdk.CoreAssemblies` package for **server-side development**.
+
+
+
+
+<hr/>
+
+![bg](./images/BizzSummitBackGround.png)
+
+# ABOUT ME
+
+## Jordi Montaña
+
+
+- Coding at **10 yrs old**
+- **.Net** in 2006
+- Master's Degree in Computer Science, **Universitat Politècnica Catalunya (UPC)**, 2007
+- Started with **CRM 4** in 2011
+- Author of **FakeXrmEasy** since 2014
+- Founded **DynamicsValue** in 2015
+ 
+
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# SOCIAL MEDIA
+
+- Twitter: [https://twitter.com/jordimontana](https://twitter.com/jordimontana)
+
+- LinkedIn: [https://es.linkedin.com/in/jordimontana](https://es.linkedin.com/in/jordimontana)
+
+- Email: [jordi@dynamicsvalue.com](jordi@dynamicsvalue.com)
 
 
 ---
 
-## Server-side applications
+![bg](./images/BizzSummitBackGround.png)
 
-Examples of server side applications are:
+<hr/>
 
-- **Plugins**
-- **Custom Actions / Apis**
-- **Custom Connectors**
+# TALK LINKS
+
+- Slides: [https://github.com/DynamicsValue/bizzsummit-es-2022](https://github.com/DynamicsValue/bizzsummit-es-2022)
+
+- Sample code: [https://github.com/DynamicsValue/fake-xrm-easy-samples](https://github.com/DynamicsValue/fake-xrm-easy-samples)
+
+
+---
+
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# AGENDA
+
+- The Journey of **FakeXrmEasy (FXE)**
+- Why?
+- Evolution of Unit Testing in Dynamics / Dataverse
+- The new Dataverse Client SDK, and new FXE versions
+- Demo
+- OSS Licensing Considerations
+- Q & A
+
+
+---
+
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+
+In 2013 I was told...
+
+- "Unit testing is **too complex**, **too time consuming**"
+- "It's xRM man, **no one cares** about **quality** of the software"
+- "Not **worth** it"
+
+
+---
+
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+
+... but what if it's **complex BECAUSE** ... 
+
+- you're **mocking every single request, every time?**
+- and mocks don't actually **mimic Dataverse / Dynamics behavior?**
+- and the code for mocking is actually **bigger** than, say, **plugin** code?
+- and **maybe thay's WHY is not worth it?**...
+
+---
+
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+
+... and so ... **what IF** ... 
+
+- you **didn't** have to mock anything (and it was **done for you?**)
+- you could just use the **IOrganizationService** (something you're already **familiar** with?)
+- it could **mimic Dataverse / Dynamics** behavior?
+- more like **data-driven**, like when you doing **normal development?**
+
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+
+... and **SO** we could...  
+
+- **reduce costs** because we could spot **issues** much **earlier**?
+- run **thousands** of tests **at scale**? (because they run **In-Memory**)
+- **speed-up the dev process** because **no need to deploy** in-between changes?
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+
+... and **so** In 2014 I **started working on FakeXrmEasy**...  
+
+**YET**, **for a couple of YEARS** I was....
+
+- working pretty much alone as a single contributor, **and**
+- repeatedly told...  ..... guess what??
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+
+... the **SAME** :)  
+
+- "It's xRM man, **no one cares** about **quality** of the software"
+- "Not **worth** it"
+- "You're **wasting your time** man..."
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+
+**BUT**, things started to change...  
+
+- Met Raz and delivered (my first) **CRM Saturday** talk in Manchester, 2016
+- There **were 4 people** attending
+- Yes, you read that right :)
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+
+**Next CRM Saturday in London**:   
+
+- Over **100 attendees**...
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+
+**Following CRM Saturday events**:   
+
+- Zurich (Switzerland)
+- Dubai (UAE)
+- Manchester (UK)
+- Madrid and Barcelona (Spain)
+- Dallas, Texas (US)
+- Kyiv (Ukraine)
 - ...
 
-These run inside the Dataverse's app pool / sandbox service once deployed.
 
 ---
+![bg](./images/BizzSummitBackGround.png)
 
-## Client-side applications
+<hr/>
 
-Examples of client-side applications are:
+# Journey of FakeXrmEasy (FXE)
 
-- **Azure Functions**
-- **Bespoke Web Api implementations**
-- **MVC web applications**
-- **Blazor applications**
-- **Console apps**
-- **Messaging apps**
+I'm very proud, that **TODAY**, more than **7 YEARS** later...   
+
+
 
 
 ---
+![bg](./images/BizzSummitBackGround.png)
 
-## Choosing your FXE version
-
-### Use `v2.1.2` for Server-Side...
-
-... applications that use the `Microsoft.CrmSdk.CoreAssemblies` package.
-
-### Use `v3.1.2` for Client-Side...
-
-... applications that use the new `Microsoft.PowerPlatform.Dataverse.Client` `v1.0.1` package.
-
----
-
-
-## Step 1a: Refactor to a base class
-
-
-- Move all references to `XrmFakedContext` and `IOrganizationService` to a base test class
-- This will make using the new middleware configuration a whole lot easier.
-- Plus, it makes unit tests `smaller`, `clean`, and easier to `read`.
-
----
-## Step 1b: Refactor to a base class
-
+# Code snippet format 
 
 ``` csharp
-public class FakeXrmEasyTestBase
+// Some code here
+public class FakeXrmEasyTestsBase
 {
-    protected readonly IOrganizationService _service;
-    protected readonly XrmFakedContext _context;
+    private readonly IXrmFakedContext _context;
+    private readonly IOrganizationService _service;
 
-    public FakeXrmEasyTestBase()
+    public FakeXrmEasyTestsBase() 
     {
-        _context = new XrmFakedContext();
+        _context = MiddlwareBuilder.New();
         _service = _context.GetOrganizationService();
     }
 }
-```
----
-
-## Step 2: Uninstall FakeXrmEasy v1.x
-
-![image](./migrating-from-1x/FakeXrmEasy_v1_uninstall.png)
+``` 
 
 ---
+![bg](./images/BizzSummitBackGround.png)
 
-## Step 3: Install FakeXrmEasy v2.x/v3.x
-
-![image](./migrating-from-1x/FakeXrmEasy_v2_install.png)
-
----
-
-## Step 4 (Optional):  Update namespaces
-
-You might get build errors because some pre-existing methods have been rewritten as extension methods into dedicated namespaces.
-
-For example, if you're unit testing plugins, include these namespaces: 
+# Code snippet (II)
 
 ``` csharp
-using FakeXrmEasy.Abstractions.Plugins;
-using FakeXrmEasy.Plugins;
-```
-
----
-
-## Step 5: Setup middleware config
-
-Now, we'll update the base test class that we refactored in Step 1 to use the brand new, fully configurable, `middleware`.
-
-- Add the necessary usings:
-
-``` csharp
-using FakeXrmEasy.Abstractions;
-using FakeXrmEasy.Abstractions.Enums;
-using FakeXrmEasy.FakeMessageExecutors;
-using FakeXrmEasy.Middleware;
-using FakeXrmEasy.Middleware.Crud;
-using FakeXrmEasy.Middleware.Messages;
-```
-
----
-
-## Step 5: Setup middleware config (II)
-
-Replace the `XrmFakedContext` reference by a new interface `IXrmFakedContext`:
-
-
-``` csharp
-protected readonly IXrmFakedContext _context;
-```
-
-In the next slide we'll define the new middleware and we'll choose a relevant license:
-
----
-
-## Step 5: Setup middleware config (III)
-
-``` csharp
-public class FakeXrmEasyTestBase
+public class FollowupPlugin : IPlugin
 {
-    protected readonly IOrganizationService _service;
-    protected readonly IXrmFakedContext _context;
-
-    public FakeXrmEasyTestBase()
-    {
-        _context = MiddlewareBuilder
-                    .New()
-
-                    .AddCrud()
-                    .AddFakeMessageExecutors(Assembly.GetAssembly(typeof(AddListMembersListRequestExecutor)))
-
-                    .UseCrud()
-                    .UseMessages()
-                    .SetLicense(FakeXrmEasyLicense.RPL_1_5)
-                    .Build();
-
-        _service = _context.GetOrganizationService();
-    }
+    //Omitted for simplicity, please see the full source code above
 }
 ```
+# Quote styles
+
+Some paragragraph with a `quote text here`. 
+>Some quoted text here 
+
+> Another Quote here
+
+    Some indented text here
+    Which continues
 
 ---
+![bg](./images/BizzSummitBackGround.png)
 
-## Step 6: Re-run existing unit tests
+# Other
 
-After doing all the previous steps above now we're in a position to run again all the preexisting tests which should still `pass`.
+###### heading 6
 
-This is because the `IOrganizationService` interface and most of the `FXE 1.x` API is forward compatible with `v2.x` and `v3.x` versions and the latest versions of the `ServiceClient` in the `Microsoft.PowerPlatform.Dataverse.Client` package, which also implements the IOrganizationService interface.
+<!-- _class: swipe -->
+###### Swipe
 
 
----
-
-## Congrats!
-
-You should have successfully migrated across the latest version!
-
-`Remember`: `FXE` version 2 or later uses a `sustainable OSS` licensing model which is free of charge for lots of scenarios but requires a commercial license for `propietary code and commercial use`.
-
-You're still free to use it for `evaluation purposes` in a commercial context (i.e. PoC). 
-
-More info about [pricing here.](https://dynamicsvalue.com/pricing)
-
+Some other text
 
 ---
+![bg](./images/BizzSummitBackGround.png)
+# Notes
 
 
-## Thank You!
-
-<h4>If you liked this material please give us a <i class="fa fa-thumbs-up"></i> and share it with your peers!</h4>
-
-
-- https://dynamicsvalue.github.io/fake-xrm-easy-docs/quickstart/migrating-from-1x/
-
-- https://dynamicsvalue.com
-
-Let's connect if you have any questions / doubts: info@dynamicsvalue.com
-
+<!-- Some presenter notes -->
 
