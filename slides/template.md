@@ -19,7 +19,7 @@ img {
     text-align: center;
 }
 h1 {
-  font-size: 80px;
+  font-size: 70px;
   color: #fff;
   text-align: center;
   vertical-align: middle;
@@ -36,7 +36,7 @@ h3 {
 
 ![image](./images/BizzSummitLogoBig.png)
 
-# Título Sesión
+# Azure Functions, FakeXrmEasy, Dataverse
 ### Jordi Montaña
 
 ---
