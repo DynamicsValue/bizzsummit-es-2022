@@ -94,6 +94,8 @@ h3 {
 
 - Sample code: [https://github.com/DynamicsValue/fake-xrm-easy-samples](https://github.com/DynamicsValue/fake-xrm-easy-samples)
 
+- FakeXrmEasy Docs: [https://dynamicsvalue.github.io/fake-xrm-easy-docs/quickstart/](https://dynamicsvalue.github.io/fake-xrm-easy-docs/quickstart/)
+
 
 ---
 
@@ -247,8 +249,79 @@ In 2013 I was told...
 
 # Journey of FakeXrmEasy (FXE)
 
+I'm very **proud**, that **TODAY**, more than **7 YEARS** later...   
+
+### FakeXrmEasy Use 
+- **2 M+ downloads**: [https://www.nuget.org/packages?q=FakeXrmEasy](https://www.nuget.org/packages?q=FakeXrmEasy)
+
+- ~ 20% of **Microsoft Crm Sdk** downloads
+- Used in **multi-million** dollar projects (many Fortune 100s included)
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+
 I'm very proud, that **TODAY**, more than **7 YEARS** later...   
 
+### FakeXrmEasy in books
+
+(PHOTOS)
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+
+I'm very proud, that **TODAY**, more than **7 YEARS** later...   
+
+### FakeXrmEasy in MS Docs
+
+(PHOTOS)
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+
+I'm very proud, that **TODAY**, more than **7 YEARS** later...   
+
+### FakeXrmEasy as a LinkedIn skill
+
+(PHOTOS)
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+
+I'm very proud, that **TODAY**, more than **7 YEARS** later...   
+
+### Even JOBS asking for FakeXrmEasy exp...
+
+(PHOTOS)
+
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+
+I'm very proud, that **TODAY**, more than **7 YEARS** later...   
+
+### And, finally, happy customers ... 
+
+(PHOTOS)
 
 
 
