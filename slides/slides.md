@@ -403,7 +403,8 @@ https://www.researchgate.net/publication/347478419_Challenges_opportunities_in_l
 # Moral of the Story ...
 
 ### Don't listen to naysayers
-### Be consistent   
+### Be consistent  
+### Do sleep more than me 
 
 ---
 ![bg](./images/BizzSummitBackGround.png)
@@ -558,6 +559,7 @@ Reciprocal Public License (RPL 1.5) is **NOT** new:
 - RPL 1.5
 - **THE comprehensive list**: https://spdx.org/licenses/
 
+<!-- No Nuclear, Hippocratic, NASA, Beerware -->
 
 ---
 ![bg](./images/BizzSummitBackGround.png)
