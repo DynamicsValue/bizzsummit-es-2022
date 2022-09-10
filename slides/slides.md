@@ -19,7 +19,7 @@ img {
     text-align: center;
 }
 h1 {
-  font-size: 70px;
+  font-size: 60px;
   color: #fff;
   text-align: center;
   vertical-align: middle;
@@ -36,7 +36,7 @@ h3 {
 
 ![image](./images/BizzSummitLogoBig.png)
 
-# Azure Functions, FakeXrmEasy, Dataverse
+# Azure Functions, FakeXrmEasy, Dataverse, and dotnet core
 ### Jordi Montaña
 
 ---
@@ -59,7 +59,7 @@ h3 {
 ## Jordi Montaña
 
 
-- Coding at **10 yrs old**
+- Began coding at **10 yrs old**
 - **.Net** in 2006
 - Master's Degree in Computer Science, **Universitat Politècnica Catalunya (UPC)**, 2007
 - Started with **CRM 4** in 2011
@@ -249,9 +249,9 @@ In 2013 I was told...
 
 # Journey of FakeXrmEasy (FXE)
 
-I'm very **proud**, that **TODAY**, more than **7 YEARS** later...   
+**TODAY**, more than **7 YEARS** later...   
 
-### FakeXrmEasy Use 
+### FakeXrmEasy Use : 2M downloads !
 - **2 M+ downloads**: [https://www.nuget.org/packages?q=FakeXrmEasy](https://www.nuget.org/packages?q=FakeXrmEasy)
 
 - ~ 20% of **Microsoft Crm Sdk** downloads
@@ -264,11 +264,21 @@ I'm very **proud**, that **TODAY**, more than **7 YEARS** later...
 
 # Journey of FakeXrmEasy (FXE)
 
-I'm very proud, that **TODAY**, more than **7 YEARS** later...   
+### FakeXrmEasy in books
+
+![image width:350px](./images/book1.PNG)
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
 
 ### FakeXrmEasy in books
 
-(PHOTOS)
+![image width:300px](./images/book2.PNG)
+
 
 ---
 ![bg](./images/BizzSummitBackGround.png)
@@ -277,11 +287,37 @@ I'm very proud, that **TODAY**, more than **7 YEARS** later...
 
 # Journey of FakeXrmEasy (FXE)
 
-I'm very proud, that **TODAY**, more than **7 YEARS** later...   
+### FakeXrmEasy in books
 
-### FakeXrmEasy in MS Docs
+![image width:350px](./images/book3.PNG)
 
-(PHOTOS)
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)  
+
+### FakeXrmEasy on official MSFT Docs
+
+https://docs.microsoft.com/en-us/power-apps/developer/data-platform/testing-tools-server
+
+
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE) 
+
+### FakeXrmEasy on Research Gate
+
+"Challenges and Opportunities in Low Code Testing"
+
+https://www.researchgate.net/publication/347478419_Challenges_opportunities_in_low-code_testing
+
 
 ---
 ![bg](./images/BizzSummitBackGround.png)
@@ -289,12 +325,35 @@ I'm very proud, that **TODAY**, more than **7 YEARS** later...
 <hr/>
 
 # Journey of FakeXrmEasy (FXE)
-
-I'm very proud, that **TODAY**, more than **7 YEARS** later...   
 
 ### FakeXrmEasy as a LinkedIn skill
 
-(PHOTOS)
+![image width:800px](./images/Skill001.jpg)
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+  
+### FakeXrmEasy as a LinkedIn skill
+
+![image2 width:800px](./images/Skill002.jpg)
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+  
+
+### FakeXrmEasy as a LinkedIn skill
+
+![image width:800px](./images/Skill003.jpg)
+
+
 
 ---
 ![bg](./images/BizzSummitBackGround.png)
@@ -303,11 +362,10 @@ I'm very proud, that **TODAY**, more than **7 YEARS** later...
 
 # Journey of FakeXrmEasy (FXE)
 
-I'm very proud, that **TODAY**, more than **7 YEARS** later...   
 
 ### Even JOBS asking for FakeXrmEasy exp...
 
-(PHOTOS)
+![image width:800px](./images/jobs02.PNG)
 
 
 ---
@@ -317,11 +375,22 @@ I'm very proud, that **TODAY**, more than **7 YEARS** later...
 
 # Journey of FakeXrmEasy (FXE)
 
-I'm very proud, that **TODAY**, more than **7 YEARS** later...   
 
+### Even JOBS asking for FakeXrmEasy exp...
+
+![image width:800px](./images/jobs01.PNG)
+
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Journey of FakeXrmEasy (FXE)
+  
 ### And, finally, happy customers ... 
 
-(PHOTOS)
+![image width:900px](./images/Customers.png)
 
 - [https://dynamicsvalue.com/customer-stories](https://dynamicsvalue.com/customer-stories)
 
@@ -333,8 +402,8 @@ I'm very proud, that **TODAY**, more than **7 YEARS** later...
 
 # Moral of the Story ...
 
-- **Don't listen** to naysayers...
-- Be **consistent**   
+### Don't listen to naysayers
+### Be consistent   
 
 ---
 ![bg](./images/BizzSummitBackGround.png)
@@ -353,12 +422,20 @@ https://dynamicsvalue.com/white-paper
 
 <hr/>
 
-# Evolution of Unit Testing in Dataverse
+# Why?
 
-- **Level 0**: No mocks / unit tests (many companies, surprisingly, still here)
-- **Level 1**: Manual mocks / fakse
-- **Level 2**: In-Memory data-driven unit testing with FakeXrmEasy
-- **Level 3**: Simulation: Azure functions + plugins firing In-Memory 
+![image](./images/udd.jpg)
+
+
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+## Evolution of Unit Testing in Dataverse
+
+![image width:500px](./images/unit-tests-evol.jpg)
 
 ---
 ![bg](./images/BizzSummitBackGround.png)
@@ -368,70 +445,131 @@ https://dynamicsvalue.com/white-paper
 # DEMO
 
 ## Scenario
-- 
+
+- A contact is created via an azure function
+- A plugin triggers to create a follow up task activity
+
 
 ---
 ![bg](./images/BizzSummitBackGround.png)
 
 <hr/>
 
-# Code snippet ...
+# DEMO
 
+## Scenario
 
+FXE v3 => Dataverse Client SDK in .net core
+FXE v2 => Microsoft.CrmSdk.CoreAssemblies
 
-``` csharp
-// Some code here
-public class FakeXrmEasyTestsBase
-{
-    private readonly IXrmFakedContext _context;
-    private readonly IOrganizationService _service;
+- 1) Azure function unit tests (FXE **3**.2.0)
+- 2) Plugin unit tests (FXE **2**.2.0)
+- 3) Pipeline Simulation (FXE **3**.2.0)
 
-    public FakeXrmEasyTestsBase() 
-    {
-        _context = MiddlwareBuilder.New();
-        _service = _context.GetOrganizationService();
-    }
-}
-``` 
 
 ---
 ![bg](./images/BizzSummitBackGround.png)
 
-# Code snippet (II)
+<hr/>
 
-``` csharp
-public class FollowupPlugin : IPlugin
-{
-    //Omitted for simplicity, please see the full source code above
-}
-```
-# Quote styles
+# OSS Licensing Considerations
 
-Some paragragraph with a `quote text here`. 
->Some quoted text here 
+## Triple license model
 
-> Another Quote here
+- **Reciprocal Public License 1.5**: OSI - Approved OSS license
+- **Modified PolyForm NonCommercial 1.0.0**
+- Commercial (**EULA**)
 
-    Some indented text here
-    Which continues
 
 ---
 ![bg](./images/BizzSummitBackGround.png)
 
-# Other
+<hr/>
 
-###### heading 6
+# OSS Licensing Considerations
 
-<!-- _class: swipe -->
-###### Swipe
+Basically you can use **FakeXrmEasy free of charge**:
 
+- In **OSS** projects, and / or
+- For a **Non-commercial use** and / or 
+- As part of a **Non-Commercial organization**
 
-Some other text
 
 ---
 ![bg](./images/BizzSummitBackGround.png)
-# Notes
+
+<hr/>
+
+# OSS Licensing Considerations
+
+- You'll need a **commercial** license for **propietary code and commercial use**.
+
+- **Pricing**: [https://dynamicsvalue.com/pricing](https://dynamicsvalue.com/pricing)
+
+- **No brainer**: **~ 0,88 coffees / developer / day**
+
+- **FAQ**: [https://dynamicsvalue.github.io/fake-xrm-easy-docs/licensing/faq/](https://dynamicsvalue.github.io/fake-xrm-easy-docs/licensing/faq/)
 
 
-<!-- Some presenter notes -->
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# OSS Licensing Considerations
+
+Reciprocal Public License (RPL 1.5) is **NOT** new:
+
+- **DuendeSoftware** (authors of IdentityServer)
+- **NServiceBus**
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# OSS Licensing can be quite complex....
+
+
+## Question: Is .net core OSS ??
+
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# OSS Licenses major companies love ...
+
+- **Permissive**: MIT (Expat), Apache 2.0
+- **Weak copyleft**: GPL-like (GPL, LGPL, ...)
+
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# OSS Licenses major companies don't love so much...
+### ... and that they are key to sustainability
+- Pretty much **anything different**...
+
+- AGPL 3.0 (Affero General Public License 3.0)
+- RPL 1.5
+- **THE comprehensive list**: https://spdx.org/licenses/
+
+
+---
+![bg](./images/BizzSummitBackGround.png)
+
+<hr/>
+
+# Thank You! 
+
+## Q & A
+
+#### By asking a question you're agreeing to the Beer-Ware License ;)
+
+https://spdx.org/licenses/Beerware.html
+
 
