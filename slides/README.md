@@ -22,3 +22,7 @@ Done!
 Supporting (C#) code can be found at:
 
 [https://github.com/DynamicsValue/fake-xrm-easy-samples](https://github.com/DynamicsValue/fake-xrm-easy-samples)
+
+# Lazy Mode
+
+If you don't want to build the slides yourself there is a PDF already built for you at the [slides/output](slides/output) folder.
